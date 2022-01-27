@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox prefHeight="395.0" prefWidth="557.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LogoutViewController">
+   <children>
+      <AnchorPane prefHeight="395.0" prefWidth="557.0">
+         <children>
+            <Button fx:id="btSair" contentDisplay="BOTTOM" layoutX="223.0" layoutY="159.0" mnemonicParsing="false" onAction="#onBtSair" prefHeight="39.0" prefWidth="186.0" text="Sair" textAlignment="CENTER" />
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

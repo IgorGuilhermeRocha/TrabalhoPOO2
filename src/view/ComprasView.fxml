@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="395.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ComprasViewController">
+   <children>
+      <AnchorPane fx:id="lSaldoClient" prefHeight="395.0" prefWidth="637.0">
+         <children>
+            <Label layoutX="23.0" layoutY="138.0" text="ID do Cliente:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="400.0" layoutY="138.0" text="ID do Produto:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtIdClient" layoutX="139.0" layoutY="139.0" prefHeight="25.0" prefWidth="39.0" />
+            <Button fx:id="btConfirmarClient" layoutX="197.0" layoutY="139.0" mnemonicParsing="false" onAction="#confirmarClient" text="Confirmar" />
+            <TextField fx:id="txtIdProduct" layoutX="534.0" layoutY="139.0" prefHeight="25.0" prefWidth="39.0" />
+            <Button fx:id="btConfirmarProduct" layoutX="591.0" layoutY="139.0" mnemonicParsing="false" onAction="#confirmarProduct" text="Confirmar" />
+            <Label layoutX="400.0" layoutY="171.0" text="Quantidade:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtQuantity" layoutX="534.0" layoutY="172.0" prefHeight="25.0" prefWidth="39.0" />
+            <Button fx:id="btConfirmarCompra" layoutX="294.0" layoutY="326.0" mnemonicParsing="false" onAction="#comprar" text="Confirmar compra" />
+            <Label fx:id="lNameClient" layoutX="105.0" layoutY="29.0" prefHeight="17.0" prefWidth="108.0" text="Label" visible="false" />
+            <Label fx:id="lCpfClient" layoutX="105.0" layoutY="66.0" prefHeight="17.0" prefWidth="108.0" text="Label" visible="false" />
+            <Label fx:id="lBalanceClient" layoutX="105.0" layoutY="99.0" prefHeight="17.0" prefWidth="108.0" text="Label" visible="false" />
+            <Label fx:id="lNameProduct" layoutX="612.0" layoutY="30.0" prefHeight="17.0" prefWidth="76.0" text="label" visible="false" />
+            <Label fx:id="lPriceProduct" layoutX="612.0" layoutY="76.0" prefHeight="17.0" prefWidth="76.0" text="Label" visible="false" />
+            <Label fx:id="lIdClientError" layoutX="139.0" layoutY="190.0" text="ID inválido" textFill="RED" visible="false" />
+            <Label fx:id="lIdProductError" layoutX="541.0" layoutY="224.0" text="ID inválido" textFill="RED" visible="false">
+               <font>
+                  <Font size="15.0" />
+               </font></Label>
+            <Label layoutX="26.0" layoutY="27.0" text="Nome:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="29.0" layoutY="64.0" text="CPF:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="24.0" layoutY="97.0" text="Saldo:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="lQuantityProduct" layoutX="612.0" layoutY="107.0" prefHeight="17.0" prefWidth="76.0" text="Label" visible="false" />
+            <Label layoutX="513.0" layoutY="28.0" text="Nome:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="515.0" layoutY="71.0" text="Preço:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="515.0" layoutY="105.0" text="Quantidade:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="lQuantityError" layoutX="457.0" layoutY="222.0" prefHeight="25.0" prefWidth="213.0" text="Erro, quantidade inválida" textFill="RED" visible="false">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

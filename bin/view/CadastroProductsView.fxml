@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="286.0" prefWidth="538.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CadastroProductsViewController">
+   <children>
+      <Label layoutX="37.0" layoutY="62.0" text="Nome Produto:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="37.0" layoutY="108.0" text="Preço:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="37.0" layoutY="149.0" text="Quantidade:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="btConfirmar" layoutX="165.0" layoutY="231.0" mnemonicParsing="false" onAction="#onBtConfirmarAction" text="Confirmar" />
+      <Button fx:id="btCancelar" layoutX="329.0" layoutY="231.0" mnemonicParsing="false" onAction="#onBtCancelarAction" text="Cancelar" />
+      <TextField fx:id="txtName" layoutX="179.0" layoutY="63.0" />
+      <TextField fx:id="txtPrice" layoutX="179.0" layoutY="109.0" prefHeight="25.0" prefWidth="74.0" />
+      <TextField fx:id="txtQuantity" layoutX="179.0" layoutY="150.0" prefHeight="25.0" prefWidth="41.0" />
+      <Label fx:id="lNameError" layoutX="360.0" layoutY="67.0" text="Não pode ser nulo" textFill="RED" visible="false" />
+      <Label fx:id="lPriceError" layoutX="270.0" layoutY="113.0" text="Não pode ser nulo, deve ser um número positivo" textFill="RED" visible="false" />
+      <Label fx:id="lQuantityError" layoutX="253.0" layoutY="154.0" text="Não pode ser nulo, deve ser um número positivo" textFill="RED" visible="false" />
+   </children>
+</AnchorPane>
